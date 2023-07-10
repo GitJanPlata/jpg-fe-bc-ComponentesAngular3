@@ -1,0 +1,12 @@
+
+
+<app-tabla-articulos
+  [articulos]="articulos"
+  (borrarArticulo)="borrarArticulo($event)"
+  (seleccionarArticulo)="seleccionarArticulo($event)"
+></app-tabla-articulos>
+
+<app-formulario-articulos
+  (agregarArticulo)="agregarArticulo($event)"
+  (modificarArticulo)="modificarArticulo($event)"
+></app-formulario-articulos>

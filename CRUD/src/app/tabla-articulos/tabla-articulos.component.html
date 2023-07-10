@@ -1,0 +1,24 @@
+<table>
+    <thead>
+    <tr>
+        <th>Código</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Borrar</th>
+        <th>Seleccionar</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let articulo of articulos; let i = index">
+        <td>{{ articulo.codigo }}</td>
+        <td>{{ articulo.descripcion }}</td>
+        <td>{{ articulo.precio }}</td>
+        <td>
+        <button (click)="borrar(i)">Borrar</button>
+        </td>
+        <td>
+        <button (click)="seleccionar(i)">Seleccionar</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
